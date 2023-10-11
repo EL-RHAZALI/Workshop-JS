@@ -1,0 +1,98 @@
+body{
+    background-color: aqua;
+}
+section{
+    display: flex;
+    justify-content: center;
+}
+.countainer{
+    width: 400px;
+    height: 600px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-template-areas: "ecran ecran ecran ecran"
+                         "clear clear delete division"
+                         "seven eight nein multiplication"
+                         "four five sex substraction"
+                         "one two three plus"
+                         "zero zero zero egale";
+}
+.countainer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    font-size: 40px;
+    font-weight: 600;
+
+}
+.ecran{
+    grid-area: ecran;
+    background-color: black;
+}
+.clear{
+    grid-area: clear;
+}
+.delete{
+    grid-area: delete;
+}
+.division{
+    grid-area: division;
+}
+.seven{
+    grid-area: seven;
+}
+.eight{
+    grid-area: eight;
+}
+.nein{
+    grid-area: nein;
+}
+.multiplication{
+    grid-area: multiplication;
+}
+.four{
+    grid-area: four;
+}
+.five{
+    grid-area: five;
+}
+.sex{
+    grid-area: sex;
+}
+.substraction{
+    grid-area: substraction;
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.plus{
+    grid-area: plus;
+}
+.zero{
+    grid-area: zero;
+}
+.egale{
+    grid-area: egale;
+}
+.clear,.delete,.one,.two,.three,.four,.five,.sex,.seven,.eight,.nein,.zero{
+    background-color: rgb(189, 188, 188);
+}
+.plus,.substraction,.division,.multiplication,.egale{
+    background-color: rgb(247, 126, 82);
+    color: white;
+}
+div[type="button"]{
+    cursor: pointer;
+}
+div[type="button"]:hover{
+    background-color: rgb(66, 65, 66);
+}
