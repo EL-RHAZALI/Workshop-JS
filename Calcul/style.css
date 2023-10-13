@@ -31,6 +31,7 @@ section{
 .ecran{
     grid-area: ecran;
     background-color: black;
+    color: white;
 }
 .clear{
     grid-area: clear;
@@ -47,7 +48,7 @@ section{
 .eight{
     grid-area: eight;
 }
-.nein{
+.nine{
     grid-area: nein;
 }
 .multiplication{
@@ -83,7 +84,7 @@ section{
 .egale{
     grid-area: egale;
 }
-.clear,.delete,.one,.two,.three,.four,.five,.sex,.seven,.eight,.nein,.zero{
+.clear,.delete,.one,.two,.three,.four,.five,.sex,.seven,.eight,.nine,.zero{
     background-color: rgb(189, 188, 188);
 }
 .plus,.substraction,.division,.multiplication,.egale{
@@ -95,4 +96,9 @@ div[type="button"]{
 }
 div[type="button"]:hover{
     background-color: rgb(66, 65, 66);
+}
+
+#ecran{
+    display: flex;
+    justify-content: flex-end;
 }
